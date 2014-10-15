@@ -1,0 +1,78 @@
+﻿<div id="content2">
+    <div id="main_content">
+
+        <div id="wrapper">
+            <div class="selecionar">
+            <div class="current_tier_division">
+                <div id="cti" class="current_tier_img"></div>
+                <div class="current_tier">
+                    <select id="ct">
+                        <option value="b">Bronze</option>
+                        <option value="s">Prata</option>
+                        <option value="g">Ouro</option>
+                        <option value="p">Platina</option>
+                        <option value="d">Diamante</option>
+                    </select>
+                </div>
+                <div class="current_division">
+                    <select id="cd">
+                        <option selected="selected">5</option>
+                        <option>4</option>
+                        <option>3</option>
+                        <option>2</option>
+                        <option>1</option>
+                    </select>
+                </div>
+            </div>
+            <div class="desired_tier_division">
+                <div id="dti" class="desired_tier_img"></div>
+                <div class="desired_tier">
+                    <select id="dt">
+                        <option value="b">Bronze</option>
+                        <option value="s">Prata</option>
+                        <option value="g">Ouro</option>
+                        <option value="p">Platina</option>
+                        <option value="d">Diamante</option>
+                    </select>
+                </div>
+                <div class="desired_division">
+                    <select id="dd">
+                        <option selected="selected">5</option>
+                        <option>4</option>
+                        <option>3</option>
+                        <option>2</option>
+                        <option>1</option>
+                    </select>
+                </div>
+            </div>
+            <div id="sv" class="server" style="display:none;">
+                <select>
+                    <option>Brazil</option>
+                </select>
+            </div>
+            <div class="vpn" style="display:none;">
+                <input name="VPN Protection" type="checkbox" value="VPN Protection" id="vpn_id">
+            </div>
+            
+            <form target="pagseguro" action="https://pagseguro.uol.com.br/security/webpagamentos/webpagto.aspx" method="post">
+
+                <span>VALOR DA COTAÇÃO</span>
+                <span id="price" class="btn">R$ 0,00</span>
+
+
+                <input type="hidden" name="email_cobranca" value="elojustice@gmail.com">
+                <input type="hidden" name="tipo" value="CP">
+                <input type="hidden" name="moeda" value="BRL">
+                <input type="hidden" name="item_id_1" value="01">
+                <input type="hidden" name="item_descr_1" id="descricaojob" value="EloJob - De b5 ate b5">
+                <input type="hidden" name="item_valor_1" id="valorfinal" value="000">
+                <input type="hidden" name="item_frete_1" value="0">
+                <input type="hidden" name="item_peso_1" value="0">
+                <input type="hidden" name="item_quant_1" value="1">
+                <input style="font-size:14px; padding:5px;" type="submit" name="submit" id="botao_comprar" class="btn btn-info" value="COMPRAR">
+            </form>
+
+
+        </div>
+    </div>
+</div>

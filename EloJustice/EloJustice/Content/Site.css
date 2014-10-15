@@ -1,0 +1,100 @@
+﻿.current_tier_img, .desired_tier_img {
+    width: 192px;
+    height: 192px;
+    background-image: url(/images/bronze.png);
+    z-index: 36;
+    margin: auto;
+    text-align: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    font-size: 18px;
+    float: left;
+    border: 1px solid #e8e4e3;
+}
+
+.current_tier_division, .desired_tier_division {
+    width: 49%;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.desired_tier_division {
+    float: right;
+}
+
+#price {
+    padding: 5px 10px;
+    width: 83px;
+    text-align: right;
+    border: 1px dotted #d1d1d1;
+    background: #f1f1f1;
+}
+
+select {
+    border: 1px solid #d1d1d1;
+    height: 30px;
+    float: left;
+}
+
+body {
+    padding-bottom: 20px;
+}
+
+.logo {
+    margin: auto;
+    text-align: center;
+}
+
+#wrapper {
+    width: 520px;
+    height: 324px;
+    margin: auto;
+}
+
+.mynavbar {
+    border-radius: 0;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
